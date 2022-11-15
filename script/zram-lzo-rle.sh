@@ -1,8 +1,8 @@
 #!/bin/bash
 #Does user run script with sudo?
-if [ "$EUID" -ne 0 ]
-  then echo "Please, run script with sudo"
-  exit 1
+if [ "$EUID" -ne 0 ]; then
+echo "Please, run script with sudo"
+exit 1
 fi
 
 #First, enable the module
